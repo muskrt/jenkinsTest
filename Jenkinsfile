@@ -3,11 +3,20 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Clarusway_Way to Reinvent Yourself"
-                sh 'echo using shell within jenksinfile'
-                echo " not using shell in the jenkinsfile"
-       
-         
+                echo 'Starting build ...'
+                sh 'python welcome.py'
+            }
+        }
+                stage('test') {
+            steps {
+                echo 'Starting test...'
+                sh 'python welcome.py'
+            }
+        }
+                stage('deploy') {
+            steps {
+                echo 'Starting deploy...'
+                sh 'python welcome.py '
             }
         }
     }
