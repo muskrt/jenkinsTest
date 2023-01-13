@@ -8,9 +8,5 @@ def main_page():
   return "test page"
 
 
-if __name__=="__main__":
-  app.run(debug=True,port=5000)
-  
-
 
 
