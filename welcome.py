@@ -1,4 +1,16 @@
-print ( "welcome again sir this is scm test project")
+from flask import Flask 
+app= Flask (__name__)
+
+
+
+@app.route('/')
+def main_page():
+  return "test page"
+
+
+if __name__=="__main__:
+  app.run(debug=True,port=5000)
+  
 
 
 
