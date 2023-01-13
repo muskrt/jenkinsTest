@@ -1,6 +1,4 @@
-print ( "welcome again sir ")
-print ( " how are you ?")
-print ( "pipeline tests")
-print ( "build trigger test")
+print ( "welcome again sir this is scm test project")
+
 
 
